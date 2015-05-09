@@ -30,7 +30,7 @@ $app->post('/images', function(Request $request) {
 
     // Validate the input against given rules
     $validation = Validator::make($input, [
-        'image'     => 'required|mimes:gif,png,jpg',
+        'image'     => 'required|mimes:gif,png,jpg,jpeg',
         'title'     => 'required|min:3',
     ]);
 
